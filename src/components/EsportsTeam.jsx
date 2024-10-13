@@ -1,39 +1,99 @@
+import esportsTeam_1 from "../assets/bgmi.jpg";
+import esportsTeam_2 from "../assets/cod.jpg";
+import esportsTeam_3 from "../assets/pokemon.jpg";
+
 export const EsportsTeam = () => {
   return (
     <div className="teams m-5">
-      <h1 className="font-bold text-yellow-400 text-4xl ">Our Esports Team</h1>
-      <div className="m-5">
-        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-            <img
-              className="rounded-t-lg"
-              src="/docs/images/blog/image-1.jpg"
-              alt=""
-            />
-          </a>
-          <div className="p-5">
-            <a
-              href="#"
-              className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-            >
-              <img
-                className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-                src="/docs/images/blog/image-4.jpg"
-                alt=""
-              />
-              <div className="flex flex-col justify-between p-4 leading-normal">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  Noteworthy technology acquisitions 2021
-                </h5>
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  Here are the biggest enterprise technology acquisitions of
-                  2021 so far, in reverse chronological order.
-                </p>
+      <h1 className="font-bold text-4xl text-yellow-400">Our Teams</h1>
+
+      <section className="text-gray-400 body-font">
+        <div className="container px-5 py-10 mx-auto">
+          <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+            <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div className="rounded-lg h-64 overflow-hidden">
+                <img
+                  alt="content"
+                  className="object-cover object-center h-full w-full"
+                  src={esportsTeam_1}
+                />
               </div>
-            </a>
+              <h2 className="text-xl font-medium title-font text-white mt-5">
+                Battlegrouns Mobile India
+              </h2>
+             
+              <a className="text-indigo-400 inline-flex items-center mt-3">
+                Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  className="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div className="rounded-lg h-64 overflow-hidden">
+                <img
+                  alt="content"
+                  className="object-cover object-center h-full w-full"
+                  src={esportsTeam_2}
+                />
+              </div>
+              <h2 className="text-xl font-medium title-font text-white mt-5">
+                Call of Duty Mobile
+              </h2>
+             
+              <a className="text-indigo-400 inline-flex items-center mt-3">
+                Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  className="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div className="rounded-lg h-64 overflow-hidden">
+                <img
+                  alt="content"
+                  className="object-cover object-center h-full w-full"
+                  src={esportsTeam_3}
+                />
+              </div>
+              <h2 className="text-xl font-medium title-font text-white mt-5">
+               Pokemon Unite Mobile
+              </h2>
+              
+              <a className="text-indigo-400 inline-flex items-center mt-3">
+                Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  className="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

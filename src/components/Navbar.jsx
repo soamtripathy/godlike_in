@@ -1,3 +1,5 @@
+import { EsportsTeam } from "./EsportsTeam";
+
 const Navbar = () => {
   return (
     <nav className="navbar text-white flex justify-between items-center p-4 max-w-1600px mx-5">
@@ -23,7 +25,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="/teams">Teams</a>
+            <a href={<EsportsTeam/>}>Teams</a>
           </li>
           <li>
             <a href="/about-us">About Us</a>
