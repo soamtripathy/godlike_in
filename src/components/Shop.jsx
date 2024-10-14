@@ -1,76 +1,63 @@
-
-"use client";
-import { Card } from "flowbite-react";
-
 export const Shop = () => {
   return (
     <div className="mt-5 p-5 max-w-1600px h-100%">
       <h1 className="text-yellow-400 font-bold text-4xl">Our Store</h1>
-      <Card
-      className="max-w-sm"
-      imgAlt="Apple Watch Series 7 in colors pink, silver, and black"
-      imgSrc="/images/products/apple-watch.png"
-    >
-      <a href="#">
-        <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-          Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport
-        </h5>
-      </a>
-      <div className="mb-5 mt-2.5 flex items-center">
-        <svg
-          className="h-5 w-5 text-yellow-300"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-        </svg>
-        <svg
-          className="h-5 w-5 text-yellow-300"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-        </svg>
-        <svg
-          className="h-5 w-5 text-yellow-300"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-        </svg>
-        <svg
-          className="h-5 w-5 text-yellow-300"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-        </svg>
-        <svg
-          className="h-5 w-5 text-yellow-300"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-        </svg>
-        <span className="ml-3 mr-2 rounded bg-cyan-100 px-2.5 py-0.5 text-xs font-semibold text-cyan-800 dark:bg-cyan-200 dark:text-cyan-800">
-          5.0
-        </span>
+      <div className="card my-5 grid grid-cols-2">
+        <div className="flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-800 md:max-w-xl md:flex-row border-2 border-yellow-400">
+          <img
+            className="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+            src="https://firebasestorage.googleapis.com/v0/b/dacby-database.appspot.com/o/10%20Images%2Fgodlike_no_bg_2040x2040.webp?alt=media&token=da038071-4bb0-4b28-b98a-c49825a33c7c"
+            alt=""
+          />
+          <div className="flex flex-col justify-start p-6">
+            <h5 className="mb-2 text-xl font-medium text-yellow-400 ">
+              Godlike Official Jersey Limited Edition
+            </h5>
+            <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              Elevate your style with our exclusive limited edition jerseys,
+              available only from Godlike Esports. Designed for dedicated fans
+              and gamers, these jerseys are crafted from premium materials for
+              ultimate comfort and performance.
+            </p>
+            <button
+              onClick={() =>
+                (window.location.href =
+                  "https://dacby.com/product-detail/?pid=bpL&Name=Godlike-Official-Jersey-Limited-Edition-|-Size---XXL-(New).html")
+              }
+              className="mt-auto bg-yellow-400 text-black font-bold py-2 px-4 rounded hover:bg-yellow-500"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+        <div className="flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-800 md:max-w-xl md:flex-row border-2 border-yellow-400">
+          <img
+            className="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+            src="https://firebasestorage.googleapis.com/v0/b/dacby-database.appspot.com/o/10%20Images%2Fgodlike_no_bg_2040x2040.webp?alt=media&token=da038071-4bb0-4b28-b98a-c49825a33c7c"
+            alt=""
+          />
+          <div className="flex flex-col justify-start p-6">
+            <h5 className="mb-2 text-xl font-medium text-yellow-400 ">
+              Godlike Official Jersey Limited Edition - Player Signed
+            </h5>
+            <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              Own a piece of esports history with our player-signed jerseys,
+              featuring autographs from your favorite Godlike Esports players.
+              These unique collectibles are perfect for true fans and collectors
+              alike, combining style and authenticity.
+            </p>
+            <button
+              onClick={() =>
+                (window.location.href =
+                  "https://dacby.com/product-detail/?pid=bpL&Name=Godlike-Official-Jersey-Limited-Edition-|-Size---XXL-(New).html")
+              }
+              className="mt-auto bg-yellow-400 text-black font-bold py-2 px-4 rounded hover:bg-yellow-500"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
       </div>
-      <div className="flex items-center justify-between">
-        <span className="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-        <a
-          href="#"
-          className="rounded-lg bg-cyan-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
-        >
-          Add to cart
-        </a>
-      </div>
-    </Card>
     </div>
   );
 };

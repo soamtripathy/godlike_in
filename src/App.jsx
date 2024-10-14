@@ -1,3 +1,4 @@
+import { Footer } from "./components/Footer.jsx";
 import "./App.css";
 import Acheivement from "./components/Acheivement.jsx";
 import { Creators } from "./components/Creators.jsx";
@@ -21,6 +22,7 @@ function App() {
         <Sponsers/>
         <Videos/>
         <Shop/>
+        <Footer/>
       </div>
     </>
   );
