@@ -49,7 +49,7 @@ export const EsportsTeam = () => {
                 Call of Duty Mobile
               </h2>
              
-              <a className="text-indigo-400 inline-flex items-center mt-3">
+              <a className="text-indigo-400 inline-flex items-center mt-3 ">
                 Learn More
                 <svg
                   fill="none"

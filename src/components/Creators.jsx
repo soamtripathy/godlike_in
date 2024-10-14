@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import esportsTeam_1 from "../assets/bgmi.jpg";
-import esportsTeam_2 from "../assets/cod.jpg";
-import esportsTeam_3 from "../assets/pokemon.jpg";
-import ach1 from "../assets/ach1.jpg";
+import creator_1 from "../assets/creators/jonny.jpg";
+import creator_2 from "../assets/creators/zgod.jpg";
+import creator_3 from "../assets/creators/mizo.jpg";
+
 
 const images = [
-  { src: esportsTeam_1, name: "BGMI" },
-  { src: esportsTeam_2, name: "Call of Duty Mobile" },
-  { src: esportsTeam_3, name: "Pokemon Unite Mobile" },
-  { src: ach1, name: "Achievement 1" },
+  { src: creator_1, name: "Jonathan Gaming" },
+  { src: creator_2, name: "ZGod Gaming" },
+  { src: creator_3, name: "Mizo is Live" },
+ 
 ];
 
 export const Creators = () => {
