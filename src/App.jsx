@@ -1,30 +1,19 @@
-import { Footer } from "./components/Footer.jsx";
-import "./App.css";
-import Acheivement from "./components/Acheivement.jsx";
-import { Creators } from "./components/Creators.jsx";
-import { EsportsTeam } from "./components/EsportsTeam.jsx";
-import Navbar from "./components/Navbar.jsx";
-import { Shop } from "./components/Shop.jsx";
-import { Sponsers } from "./components/Sponsers.jsx";
-import { Videos } from "./components/Videos.jsx";
+import React from "react";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./Layout"; 
 
 
 function App() {
-  
+  const appStyle = {
+    backgroundImage: "url('../public/bg.jpg')",
+    backgroundSize: "cover",
+    height : "100%"
+  };
+
   return (
-    <>
-      <div>
-        
-        <Navbar/>
-        <Acheivement/>
-        <EsportsTeam/>
-        <Creators />
-        <Sponsers/>
-        <Videos/>
-        <Shop/>
-        <Footer/>
-      </div>
-    </>
+    <div style={appStyle}>
+      <RouterProvider router={router} />
+    </div>
   );
 }
 
