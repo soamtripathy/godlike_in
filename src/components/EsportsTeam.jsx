@@ -6,7 +6,6 @@ export const EsportsTeam = () => {
   return (
     <div className="teams m-5">
       <h1 className="font-bold text-4xl text-yellow-400">Our Teams</h1>
-
       <section className="text-gray-400 body-font">
         <div className="container px-5 py-10 mx-auto">
           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
@@ -21,7 +20,7 @@ export const EsportsTeam = () => {
               <h2 className="text-xl font-medium title-font text-white mt-5">
                 Battlegrouns Mobile India
               </h2>
-             
+
               <a className="text-indigo-400 inline-flex items-center mt-3">
                 Learn More
                 <svg
@@ -48,7 +47,7 @@ export const EsportsTeam = () => {
               <h2 className="text-xl font-medium title-font text-white mt-5">
                 Call of Duty Mobile
               </h2>
-             
+
               <a className="text-indigo-400 inline-flex items-center mt-3 ">
                 Learn More
                 <svg
@@ -73,9 +72,9 @@ export const EsportsTeam = () => {
                 />
               </div>
               <h2 className="text-xl font-medium title-font text-white mt-5">
-               Pokemon Unite Mobile
+                Pokemon Unite Mobile
               </h2>
-              
+
               <a className="text-indigo-400 inline-flex items-center mt-3">
                 Learn More
                 <svg

@@ -4,12 +4,10 @@ import creator_1 from "../assets/creators/jonny.jpg";
 import creator_2 from "../assets/creators/zgod.jpg";
 import creator_3 from "../assets/creators/mizo.jpg";
 
-
 const images = [
   { src: creator_1, name: "Jonathan Gaming" },
   { src: creator_2, name: "ZGod Gaming" },
   { src: creator_3, name: "Mizo is Live" },
- 
 ];
 
 export const Creators = () => {
@@ -25,7 +23,7 @@ export const Creators = () => {
 
   if (images.length === 0) {
     return (
-      <div className="relative w-64 h-64 rounded-full bg-gray-200 flex items-center justify-center">
+      <div className="relative w-full h-64 rounded-lg bg-gray-200 flex items-center justify-center">
         <p className="text-gray-500">No images available</p>
       </div>
     );
@@ -47,8 +45,10 @@ export const Creators = () => {
 
   return (
     <div className="m-5">
-      <h1 className="font-bold text-4xl text-yellow-400">Our Creators</h1>
-      <div className="relative w-full h-64 overflow-hidden p-10 mt-10">
+      <h1 className="font-bold text-4xl text-yellow-400 ">
+        Our Creators
+      </h1>
+      <div className="relative w-full h-96 overflow-hidden p-10 mt-5 sm:h-80">
         <div className="flex justify-center items-center h-full">
           {[-1, 0, 1].map((offset) => (
             <div
@@ -63,14 +63,17 @@ export const Creators = () => {
                 alt={images[getImageIndex(offset)].name}
                 className="w-full h-full object-cover rounded-full"
               />
-              {offset === 0 && (
-                <figcaption className="text-center text-white text-4xl mt-2">
-                  {images[getImageIndex(offset)].name}
-                </figcaption>
-              )}
+              <figcaption
+                className={`text-center text-yellow-400 font-bold mt-2 p-2${
+                  offset === 0 ? "text-xl" : "text-sm"
+                }`}
+              >
+                {images[getImageIndex(offset)].name}
+              </figcaption>
             </div>
           ))}
         </div>
+        
         {images.length > 1 && (
           <>
             <button
@@ -88,6 +91,7 @@ export const Creators = () => {
           </>
         )}
       </div>
+      
     </div>
   );
 };

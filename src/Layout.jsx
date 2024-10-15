@@ -8,6 +8,7 @@ import { Shop } from "./components/Shop.jsx";
 import { Sponsers } from "./components/Sponsers.jsx";
 import { Videos } from "./components/Videos.jsx";
 import Footer from "./components/Footer.jsx"; 
+import AboutUs from "./components/AboutUs.jsx";
 
 const Layout = ({ children }) => (
   <>
@@ -76,6 +77,13 @@ export const router = createBrowserRouter([
     element: (
       <Layout>
         <Shop />
+      </Layout>
+    ),
+  },{
+    path: "/about-us",
+    element: (
+      <Layout>
+        <AboutUs />
       </Layout>
     ),
   },
