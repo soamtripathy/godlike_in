@@ -5,7 +5,7 @@ import { router } from "./Layout";
 
 function App() {
   const appStyle = {
-    backgroundImage: "url('../public/bg.jpg')",
+    backgroundImage: "url('/bg.jpg')" ,
     backgroundSize: "cover",
     height : "100%"
   };
